@@ -1,0 +1,31 @@
+# robots.txt para Auriculares Ofertas
+# https://imagif.github.io/AURICULARES-OFERTAS/
+
+# Permitir el acceso a todos los buscadores
+User-agent: *
+Allow: /
+
+# Bloquear el acceso a carpetas y archivos innecesarios de GitHub
+Disallow: /.github/
+Disallow: /assets/
+Disallow: /.gitignore
+Disallow: /README.md
+Disallow: /LICENSE
+
+# Bloquear archivos de configuración y temporales
+Disallow: /*.json$
+Disallow: /*.yml$
+Disallow: /*.log$
+
+# Permitir imágenes y recursos estáticos (importante para SEO)
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
+
+# Ubicación del Sitemap
+Sitemap: https://imagif.github.io/AURICULARES-OFERTAS/sitemap.xml
