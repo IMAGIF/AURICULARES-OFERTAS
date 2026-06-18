@@ -60,51 +60,7 @@
             color: var(--dorado);
         }
 
-        /* HEADER */
-        header {
-            background: linear-gradient(135deg, #000000, #1a1a1a);
-            padding: 50px 20px;
-            text-align: center;
-            color: var(--blanco);
-        }
-
-        header h1 {
-            font-size: 2.6rem;
-            margin: 0;
-            color: var(--dorado);
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 12px;
-            color: var(--blanco);
-            font-weight: 700;
-        }
-
-        /* FRANJA AZUL OSCURO */
-        .franja-azul {
-            background: var(--azul-oscuro);
-            padding: 25px 20px;
-            text-align: center;
-        }
-
-        .franja-azul h2 {
-            margin: 0;
-            color: var(--blanco);
-            font-size: 1.8rem;
-            font-weight: 700;
-        }
-
-        /* CONTENEDOR GENERAL */
-        .container {
-            width: 92%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px 0;
-        }
-
-        /* TARJETAS DE PRODUCTO (estilo A) */
+        /* TARJETAS DE PRODUCTO */
         .producto {
             display: flex;
             flex-wrap: wrap;
@@ -162,17 +118,15 @@
             }
         }
 
-@media (max-width: 480px) {
-    nav ul {
-        gap: 12px; /* reduce el espacio entre palabras */
-    }
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 12px;
+            }
 
-    nav ul li a {
-        font-size: 0.9rem; /* reduce ligeramente el tamaño del texto */
-    }
-}
-
-
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 
     <!-- Schema JSON-LD -->
@@ -192,7 +146,12 @@
 <!-- MENÚ SUPERIOR -->
 <nav>
     <ul>
-        <li><a href="#">Inicio</a></li>
+        <!-- NUEVO BOTÓN: MI WEB DE -->
+        <li><a href="https://imagif.github.io/MI-WEB-DE/">🏠 MI WEB DE</a></li>
+
+        <!-- Inicio de la sección Auriculares -->
+        <li><a href="https://imagif.github.io/AURICULARES-OFERTAS/">Inicio</a></li>
+
         <li><a href="#">Auriculares</a></li>
         <li><a href="#">Marcas</a></li>
         <li><a href="#">Guías</a></li>
@@ -201,19 +160,23 @@
 </nav>
 
 <!-- HEADER -->
-<header>
-    <h1>🎧 Auriculares Ofertas 2026</h1>
-    <p><strong>Las mejores ofertas, análisis y comparativas de auriculares del año</strong></p>
+<header style="background: linear-gradient(135deg, #000000, #1a1a1a); padding: 50px 20px; text-align: center; color: var(--blanco);">
+    <h1 style="font-size: 2.6rem; margin: 0; color: var(--dorado); font-weight: 700;">🎧 Auriculares Ofertas 2026</h1>
+    <p style="font-size: 1.2rem; margin-top: 12px; color: var(--blanco); font-weight: 700;">
+        Las mejores ofertas, análisis y comparativas de auriculares del año
+    </p>
 </header>
 
 <!-- FRANJA AZUL OSCURO -->
-<div class="franja-azul">
-    <h2>Bienvenido a tu portal de auriculares</h2>
+<div class="franja-azul" style="background: var(--azul-oscuro); padding: 25px 20px; text-align: center;">
+    <h2 style="margin: 0; color: var(--blanco); font-size: 1.8rem; font-weight: 700;">
+        Bienvenido a tu portal de auriculares
+    </h2>
 </div>
 
-<!-- SECCIÓN DE INTRODUCCIÓN (fondo azul oscuro suave) -->
+<!-- INTRODUCCIÓN -->
 <div style="background: var(--azul-oscuro); padding: 40px 20px;">
-    <div class="container">
+    <div class="container" style="width: 92%; max-width: 1200px; margin: auto;">
         <p style="font-size: 1.1rem; color: var(--blanco); margin: 0;">
             Aquí encontrarás las mejores ofertas, comparativas y análisis de auriculares del 2026.
             Nuestro objetivo es ayudarte a elegir el modelo perfecto según tus necesidades:
@@ -226,144 +189,118 @@
     </div>
 </div>
 
-<!-- SECCIÓN DESTACADA: TÍTULO DE PRODUCTOS (fondo gris grafito claro) -->
+<!-- SECCIÓN DESTACADA -->
 <section style="background: var(--gris-grafito); padding: 40px 20px; text-align: center;">
     <h2 style="color: var(--dorado); font-size: 2.2rem; margin: 0;">
         🎧 Mejores Auriculares de 2026
     </h2>
 </section>
 
-<!-- INICIO DE LA SECCIÓN DE PRODUCTOS (continúa en Bloque 3) -->
-<div class="container">
+<!-- PRODUCTOS PREMIUM -->
+<div class="container" style="width: 92%; max-width: 1200px; margin: auto; padding: 20px 0;">
 
-<!-- SECCIÓN DE PRODUCTOS PREMIUM -->
 <section class="container">
 
-    <!-- SONY WH-1000XM6 (fondo oscuro) -->
+    <!-- SONY WH-1000XM6 -->
     <article class="producto">
-    <a href="https://amzn.to/4uMca1y" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/71svwYdfQ3L._AC_SL1500_.jpg" alt="Sony WH-1000XM6">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/4uMca1y" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/71svwYdfQ3L._AC_SL1500_.jpg" alt="Sony WH-1000XM6">
+        </a>
+        <div class="producto-info">
             <h2>Sony WH‑1000XM6</h2>
             <p>
                 La nueva generación de Sony llega con una cancelación de ruido aún más precisa,
-                un sonido más limpio y una autonomía espectacular. Perfectos para viajar, trabajar
-                o disfrutar música al máximo nivel.
+                un sonido más limpio y una autonomía espectacular.
             </p>
             <p><strong>✔️ Cancelación de ruido líder</strong></p>
             <p><strong>✔️ Sonido equilibrado y detallado</strong></p>
             <p><strong>✔️ Autonomía de hasta 40 horas</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/4uMca1y" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/4uMca1y" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
-    <!-- BOSE QC45 (fondo grafito) -->
+    <!-- BOSE QC45 -->
     <article class="producto alt">
-    <a href="https://amzn.to/4fmCJpj" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/41krtiWoCZL._AC_SL1000_.jpg" alt="Bose QuietComfort 45">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/4fmCJpj" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/41krtiWoCZL._AC_SL1000_.jpg" alt="Bose QuietComfort 45">
+        </a>
+        <div class="producto-info">
             <h2>Bose QuietComfort 45</h2>
             <p>
-                Los Bose QC45 destacan por su comodidad extrema y su sonido cálido. Ideales para
-                largas sesiones de trabajo o viajes. Su cancelación de ruido es una de las más
-                naturales del mercado.
+                Los Bose QC45 destacan por su comodidad extrema y su sonido cálido.
             </p>
             <p><strong>✔️ Ultra cómodos</strong></p>
             <p><strong>✔️ Sonido cálido y envolvente</strong></p>
             <p><strong>✔️ Cancelación de ruido muy natural</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/4fmCJpj" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/4fmCJpj" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
-    <!-- JBL TUNE 780 NC (fondo oscuro) -->
+    <!-- JBL TUNE 780 NC -->
     <article class="producto">
-    <a href="https://amzn.to/4vn66fZ" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/81ty3i+0M0L._AC_SL1500_.jpg" alt="JBL Tune 780 NC">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/4vn66fZ" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/81ty3i+0M0L._AC_SL1500_.jpg" alt="JBL Tune 780 NC">
+        </a>
+        <div class="producto-info">
             <h2>JBL Tune 780 NC</h2>
             <p>
-                La mejor opción económica con cancelación de ruido. Los JBL Tune 780 NC ofrecen
-                un sonido potente con graves marcados y una autonomía excelente por su precio.
+                La mejor opción económica con cancelación de ruido.
             </p>
             <p><strong>✔️ Excelente relación calidad‑precio</strong></p>
             <p><strong>✔️ Graves potentes</strong></p>
             <p><strong>✔️ Cancelación de ruido eficaz</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/4vn66fZ" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/4vn66fZ" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
-    <!-- SENNHEISER MOMENTUM 4 (fondo grafito) -->
+    <!-- SENNHEISER MOMENTUM 4 -->
     <article class="producto alt">
-    <a href="https://amzn.to/3Shin7h" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/61xIM5vztHL._AC_SL1500_.jpg" alt="Sennheiser Momentum 4">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/3Shin7h" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/61xIM5vztHL._AC_SL1500_.jpg" alt="Sennheiser Momentum 4">
+        </a>
+        <div class="producto-info">
             <h2>Sennheiser Momentum 4</h2>
             <p>
                 Los Momentum 4 son la referencia en sonido Hi‑Fi dentro del mercado inalámbrico.
-                Su perfil sonoro es limpio, detallado y perfecto para audiófilos.
             </p>
             <p><strong>✔️ Sonido de alta fidelidad</strong></p>
             <p><strong>✔️ Autonomía de hasta 60 horas</strong></p>
             <p><strong>✔️ Diseño elegante y minimalista</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/3Shin7h" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/3Shin7h" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
-    <!-- BEATS STUDIO PRO (fondo oscuro) -->
+    <!-- BEATS STUDIO PRO -->
     <article class="producto">
-    <a href="https://amzn.to/4a6acRm" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/61d8bAZ6UEL._AC_SL1500_.jpg" alt="Beats Studio Pro">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/4a6acRm" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/61d8bAZ6UEL._AC_SL1500_.jpg" alt="Beats Studio Pro">
+        </a>
+        <div class="producto-info">
             <h2>Beats Studio Pro</h2>
             <p>
-                Beats vuelve con un modelo renovado, con mejor cancelación de ruido y un sonido
-                más equilibrado. Ideales para usuarios de Apple y amantes de los graves.
+                Beats vuelve con un modelo renovado, con mejor cancelación de ruido y un sonido más equilibrado.
             </p>
             <p><strong>✔️ Graves potentes</strong></p>
             <p><strong>✔️ Compatibilidad total con Apple</strong></p>
             <p><strong>✔️ Diseño moderno y resistente</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/4a6acRm" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/4a6acRm" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
-    <!-- XIAOMI AIRDOTS MAX (fondo grafito) -->
+    <!-- XIAOMI AIRDOTS MAX -->
     <article class="producto alt">
-    <a href="https://amzn.to/4vpa9Zh" target="_blank">
-        <img src="https://m.media-amazon.com/images/I/51tLyPUQRnL._AC_SL1125_.jpg" alt="Xiaomi Airdots Max">
-    </a>
-    <div class="producto-info">
-
+        <a href="https://amzn.to/4vpa9Zh" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/51tLyPUQRnL._AC_SL1125_.jpg" alt="Xiaomi Airdots Max">
+        </a>
+        <div class="producto-info">
             <h2>Xiaomi Airdots Max</h2>
             <p>
-                Xiaomi ofrece una alternativa económica con buen sonido y diseño ligero. Perfectos
-                para quienes buscan calidad sin gastar demasiado.
+                Xiaomi ofrece una alternativa económica con buen sonido y diseño ligero.
             </p>
             <p><strong>✔️ Muy económicos</strong></p>
             <p><strong>✔️ Sonido equilibrado</strong></p>
             <p><strong>✔️ Diseño ligero y cómodo</strong></p>
-            <a class="btn-amazon" href="https://amzn.to/4vpa9Zh" target="_blank">
-                Ver oferta en Amazon
-            </a>
+            <a class="btn-amazon" href="https://amzn.to/4vpa9Zh" target="_blank">Ver oferta en Amazon</a>
         </div>
     </article>
 
@@ -371,7 +308,7 @@
 
 <hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
 
-<!-- SECCIÓN DE CATEGORÍAS (fondo azul oscuro suave) -->
+<!-- SECCIÓN DE CATEGORÍAS -->
 <section style="background: var(--azul-oscuro); padding: 50px 20px;">
     <div class="container">
         <h2 style="color: var(--dorado); font-size: 2rem; margin-bottom: 25px; text-align: center;">
@@ -404,7 +341,7 @@
     </div>
 </section>
 
-<!-- SECCIÓN DE MARCAS (fondo gris grafito claro) -->
+<!-- SECCIÓN DE MARCAS -->
 <section style="background: var(--gris-grafito); padding: 50px 20px;">
     <div class="container">
         <h2 style="color: var(--dorado); font-size: 2rem; margin-bottom: 25px; text-align: center;">
@@ -413,212 +350,17 @@
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
 
-            <!-- SONY -->
             <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
                 <h3 style="color: var(--dorado);">Sony</h3>
                 <p>Innovación, calidad y la mejor cancelación de ruido.</p>
                 <a href="#" class="btn-amazon">Explorar</a>
             </div>
 
-            <!-- BOSE -->
             <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
                 <h3 style="color: var(--dorado);">Bose</h3>
                 <p>Comodidad extrema y sonido cálido.</p>
                 <a href="#" class="btn-amazon">Explorar</a>
             </div>
 
-            <!-- JBL -->
             <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
-                <h3 style="color: var(--dorado);">JBL</h3>
-                <p>Graves potentes y precios accesibles.</p>
-                <a href="#" class="btn-amazon">Explorar</a>
-            </div>
-
-            <!-- SENNHEISER -->
-            <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
-                <h3 style="color: var(--dorado);">Sennheiser</h3>
-                <p>Sonido Hi‑Fi para audiófilos exigentes.</p>
-                <a href="#" class="btn-amazon">Explorar</a>
-            </div>
-
-            <!-- BEATS -->
-            <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
-                <h3 style="color: var(--dorado);">Beats</h3>
-                <p>Diseño moderno y graves contundentes.</p>
-                <a href="#" class="btn-amazon">Explorar</a>
-            </div>
-
-            <!-- XIAOMI -->
-            <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; text-align: center;">
-                <h3 style="color: var(--dorado);">Xiaomi</h3>
-                <p>Calidad sorprendente a precios bajos.</p>
-                <a href="#" class="btn-amazon">Explorar</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
-
-<!-- SECCIÓN DE GUÍAS (fondo azul oscuro suave) -->
-<section style="background: var(--azul-oscuro); padding: 50px 20px;">
-    <div class="container">
-
-        <h2 style="color: var(--dorado); font-size: 2rem; margin-bottom: 25px; text-align: center;">
-            📘 Guías y Tutoriales
-        </h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-
-            <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
-                <h3 style="color: var(--dorado);">Cómo elegir los mejores auriculares</h3>
-                <p>Aprende qué características debes tener en cuenta antes de comprar.</p>
-                <a href="#" class="btn-amazon">Leer guía</a>
-            </div>
-
-            <div style="background: var(--gris-grafito); padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
-                <h3 style="color: var(--dorado);">Bluetooth vs Cable</h3>
-                <p>Ventajas y desventajas de cada tipo de conexión.</p>
-                <a href="#" class="btn-amazon">Leer guía</a>
-            </div>
-
-            <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
-                <h3 style="color: var(--dorado);">Mejores auriculares para gaming</h3>
-                <p>Sonido envolvente, micrófonos y latencia.</p>
-                <a href="#" class="btn-amazon">Leer guía</a>
-            </div>
-
-            <div style="background: var(--gris-grafito); padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.4);">
-                <h3 style="color: var(--dorado);">Auriculares para música</h3>
-                <p>Los modelos con mejor calidad de sonido para audiófilos.</p>
-                <a href="#" class="btn-amazon">Leer guía</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- SECCIÓN DE TABLA COMPARATIVA (fondo gris grafito claro) -->
-<section style="background: var(--gris-grafito); padding: 50px 20px;">
-    <div class="container">
-
-        <h2 style="color: var(--dorado); font-size: 2rem; margin-bottom: 25px; text-align: center;">
-            📊 Comparativa Rápida de los Mejores Auriculares
-        </h2>
-
-        <div style="overflow-x: auto;">
-            <table style="width: 100%; border-collapse: collapse; min-width: 700px;">
-
-                <thead>
-                    <tr style="background: var(--gris-oscuro); color: var(--dorado);">
-                        <th style="padding: 12px; border-bottom: 1px solid #333;">Modelo</th>
-                        <th style="padding: 12px; border-bottom: 1px solid #333;">Cancelación de Ruido</th>
-                        <th style="padding: 12px; border-bottom: 1px solid #333;">Autonomía</th>
-                        <th style="padding: 12px; border-bottom: 1px solid #333;">Calidad de Sonido</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">Sony WH‑1000XM6</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">40 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐⭐</td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">Bose QC45</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">24 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐</td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">JBL Tune 780 NC</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">50 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐</td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">Sennheiser Momentum 4</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">60 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐⭐</td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">Beats Studio Pro</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">40 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐⭐</td>
-                    </tr>
-
-                    <tr>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">Xiaomi Airdots Max</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">30 h</td>
-                        <td style="padding: 12px; border-bottom: 1px solid #333;">⭐⭐⭐</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-        </div>
-
-    </div>
-</section>
-
-<hr style="border: 0; border-top: 1px solid #333; margin: 40px 0;">
-
-<!-- SECCIÓN DE PREGUNTAS FRECUENTES (fondo azul oscuro suave) -->
-<section style="background: var(--azul-oscuro); padding: 50px 20px;">
-    <div class="container">
-
-        <h2 style="color: var(--dorado); font-size: 2rem; margin-bottom: 30px; text-align: center;">
-            ❓ Preguntas Frecuentes
-        </h2>
-
-        <!-- FAQ 1 (fondo gris oscuro) -->
-        <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="color: var(--dorado); margin-top: 0;">¿Qué auriculares tienen la mejor cancelación de ruido?</h3>
-            <p>Los Sony WH‑1000XM6 y los Bose QC45 son los líderes en cancelación de ruido en 2026.</p>
-        </div>
-
-        <!-- FAQ 2 (fondo grafito) -->
-        <div style="background: var(--gris-grafito); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="color: var(--dorado); margin-top: 0;">¿Cuáles son los mejores auriculares calidad‑precio?</h3>
-            <p>Los JBL Tune 780 NC ofrecen un equilibrio excelente entre precio, sonido y cancelación de ruido.</p>
-        </div>
-
-        <!-- FAQ 3 (fondo gris oscuro) -->
-        <div style="background: var(--gris-oscuro); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="color: var(--dorado); margin-top: 0;">¿Qué auriculares son mejores para viajar?</h3>
-            <p>Los Sony WH‑1000XM6 destacan por su autonomía y cancelación de ruido, ideales para vuelos largos.</p>
-        </div>
-
-        <!-- FAQ 4 (fondo grafito) -->
-        <div style="background: var(--gris-grafito); padding: 20px; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="color: var(--dorado); margin-top: 0;">¿Qué auriculares recomiendan para trabajar?</h3>
-            <p>Los Bose QC45 son extremadamente cómodos y tienen una cancelación de ruido muy natural.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- FOOTER PREMIUM (fondo negro elegante) -->
-<footer style="text-align: center; padding: 40px 20px; background: #000;">
-    <p style="color: var(--gris-texto); margin: 0; font-size: 1rem;">
-        © 2026 Auriculares Ofertas — Comparativas, análisis y guías
-    </p>
-    <p style="color: var(--gris-texto); font-size: 0.9rem; margin-top: 10px;">
-        Algunos enlaces pueden ser de afiliado. Esto no afecta al precio del producto.
-    </p>
-</footer>
-
-</div> <!-- cierre container general -->
-
-</body>
-</html>
+                <h3 style="
